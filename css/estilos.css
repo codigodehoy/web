@@ -25,7 +25,7 @@ a {
 }
 .contenedor-web {
   width: 80%;
-  height: 510px;
+  height: 540px;
   background: var(--blanco);
   display: grid;
   /* p: 20px; */
@@ -80,7 +80,7 @@ h3 {
 .contenedor2 {
   grid-area: contenedor2;
   background: url("../img/degradado.png") no-repeat;
-  background-size: 250px 395px;
+  background-size: 250px 480px;
 }
 /* -----------CONTENEDOR 3------------------- */
 
@@ -115,6 +115,7 @@ h3 {
 }
 
 footer {
+  width: 100%;
   grid-area: footer;
   text-align: center;
   display: block;

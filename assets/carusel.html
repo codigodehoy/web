@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="owl">
-      <button class="owl-btn"><span></span></button>
-      <button class="owl-btn"><span></span></button>
-      <button class="owl-btn"><span></span></button>
-    </div>
-  </body>
-</html>
+<div class="owl-carousel owl-theme">
+  <div class="item" data-hash="HOME"></div>
+  <div class="item" data-hash="ABOUT"></div>
+  <div class="item" data-hash="BRIEFCASE"></div>
+  <div class="item" data-hash="three"></div>
+</div>
+<script>
+  $(".owl-carousel").owlCarousel({
+    margin: 5,
+    loop: true,
+    autoWidth: true,
+  });
+</script>
