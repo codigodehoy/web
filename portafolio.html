@@ -3,40 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>portafolio</title>
+    <link rel="stylesheet" href="css/portafolio.css" />
   </head>
   <body>
-    <div class="owl-carousel owl-theme">
-      <div class="item"><h4>1</h4></div>
-      <div class="item"><h4>2</h4></div>
-      <div class="item"><h4>3</h4></div>
-      <div class="item"><h4>4</h4></div>
-      <div class="item"><h4>5</h4></div>
-      <div class="item"><h4>6</h4></div>
-      <div class="item"><h4>7</h4></div>
-      <div class="item"><h4>8</h4></div>
-      <div class="item"><h4>9</h4></div>
-      <div class="item"><h4>10</h4></div>
-      <div class="item"><h4>11</h4></div>
-      <div class="item"><h4>12</h4></div>
+    <div class="contenedor">
+      <div class="contenedor-portafolio">
+        <header>
+          <div class="menu"></div>
+          <img src="img/logo.png" alt="" />
+          <ul class="item">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="portafolio.html">BRIEFCASE</a></li>
+          </ul>
+        </header>
+        <div class="portafolio">
+          <div class="item">
+            <div class="contenido-item">
+              <img src="" alt="" />
+              <a href="">Login Google</a>
+              <p>
+                Permite a los usuarios registrarse con su cuenta de google php
+              </p>
+            </div>
+          </div>
+          <div class="item2">
+            <div class="contenido-item">
+              <img src="img/alquiler-vivienda.jpg" alt="" />
+              <a href="">Alquiler Vivienda</a>
+              <p>
+                Aplicación para llevar el control de los pagos que realiza el
+                inquilino
+              </p>
+            </div>
+          </div>
+          <div class="item3">
+            <div class="contenido-item">
+              <img src="img/api.png" alt="" />
+              <a href="">API de Fútbol</a>
+              <p>Consumir datos con el método fetch() js</p>
+            </div>
+          </div>
+          <div class="item4">
+            <div class="contenido-item">
+              <img src="img/pagina.png" alt="" />
+              <a href="https://dc-11.github.io/pagina-web/">Página Web</a>
+              <p>Contacto y una breve descripción sobre mí</p>
+            </div>
+          </div>
+          <div class="item5">
+            <div class="contenido-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p>lorem isum5</p>
+            </div>
+          </div>
+          <div class="item6">
+            <div class="contenido-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p>lorem isum6S</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          David Cadena
+        </div>
+      </div>
     </div>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 5,
-          },
-        },
-      });
-    </script>
+
+    <script></script>
   </body>
 </html>

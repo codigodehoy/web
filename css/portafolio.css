@@ -1,0 +1,83 @@
+@import url("estilos.css");
+
+.contenedor-portafolio {
+  width: 1090px;
+  height: 550px;
+  background: url("../img/global.jpg") no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 19% 71% 10%;
+  grid-template-areas:
+    "header"
+    "portafolio"
+    "footer";
+}
+header {
+  grid-area: header;
+  padding: 35px 0 20px 70px;
+}
+header img {
+  width: 150px;
+}
+header .item {
+  float: right;
+  padding-top: 5px;
+  margin-right: 60px;
+}
+
+header .item li {
+  display: inline-block;
+}
+header .item li a {
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2a95e5;
+  padding: 0 20px;
+}
+header .item li a:hover {
+  color: var(--azulOscuro);
+}
+
+.portafolio {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-area: portafolio;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: "item item2 item3" "item4 item5 item6";
+}
+
+.contenido-item {
+  text-align: center;
+  background: #61b1ee;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+.contenido-item img {
+  width: 150px;
+  height: 90px;
+}
+.contenido-item a {
+  display: block;
+  color: var(--blanco);
+  font-weight: 600;
+  font-family: "Zilla Slab", serif;
+  font-weight: 200px;
+}
+.contenido-item p {
+  color: var(--blanco);
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  color: var(--blanco);
+  background: var(--azulOscuro);
+  opacity: 0.9;
+  padding: 15px 0;
+}

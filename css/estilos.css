@@ -14,7 +14,9 @@ li {
 }
 a {
   text-decoration: none;
+  font-family: "Zilla Slab", serif;
 }
+
 .contenedor {
   width: 100%;
   min-height: 100vh;
@@ -24,11 +26,10 @@ a {
   align-items: center;
 }
 .contenedor-web {
-  width: 80%;
-  height: 540px;
+  width: 1090px;
+  height: 550px;
   background: var(--blanco);
   display: grid;
-  /* p: 20px; */
   grid-template-columns: 30% 15% 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
@@ -39,7 +40,7 @@ a {
 .contenedor1 {
   grid-area: contenedor1;
   grid-column: 1/3;
-  padding: 35px 0 35px 70px;
+  padding: 35px 0 20px 70px;
 }
 
 .contenedor1-contenido img {
@@ -47,11 +48,11 @@ a {
 }
 
 .contenedor-texto {
-  padding: 25% 0 20% 0;
+  padding: 25% 0 10% 0;
 }
 
 p {
-  font-family: "EB Garamond", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 18px;
 }
 h3 {
@@ -61,7 +62,7 @@ h3 {
   letter-spacing: 1.5px;
 }
 .redes-sociales {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .redes-sociales a {
   padding-right: 10px;
@@ -79,15 +80,14 @@ h3 {
 /* -----------CONTENEDOR 2------------------- */
 .contenedor2 {
   grid-area: contenedor2;
-  background: url("../img/degradado.png") no-repeat;
-  background-size: 250px 480px;
+  background: url("../img/fondo-small.png") left top no-repeat;
+  background-size: 164px 73px;
 }
 /* -----------CONTENEDOR 3------------------- */
 
 .contenedor3 {
   grid-area: contenedor3;
-  background: url("../img/fondo.png") left;
-  background-size: cover;
+  background: url("../img/fondo.png") no-repeat;
 }
 .item-menu {
   text-align: right;
@@ -101,10 +101,13 @@ h3 {
   display: inline-block;
 }
 .item-menu li a {
-  font-family: "Zilla Slab", serif;
-  font-size: 17px;
+  font-size: 18px;
   color: var(--blanco);
   padding: 0 20px;
+}
+.item-menu li a:hover {
+  cursor: pointer;
+  color: var(--azulOscuro);
 }
 .programmer {
   text-align: left;
@@ -125,65 +128,7 @@ footer {
 }
 
 /* ---------------Media Queries------------- */
-@media screen and (max-width: 480px) {
-  .contenedor-web {
-    width: 100%;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "contenedor3"
-      "contenedor1"
-      "contenedor2"
-      "footer";
-  }
-  .contenedor3 {
-    grid-area: contenedor3;
-  }
-  .contenedor1 {
-    grid-area: contenedor1;
-  }
-  .contenedor2 {
-    grid-area: contenedor2;
-  }
 
-  /*-------------contenedor3------------- */
-  .contenedor3 {
-    grid-area: contenedor3;
-    background: none;
-  }
-  .menu {
-    display: block;
-    padding: 20px 40px;
-  }
-
-  .menu img {
-    width: 70px;
-  }
-  .menu i {
-    float: right;
-    color: #2a95e5;
-  }
-  .item-menu {
-    display: none;
-  }
-  .programmer {
-    background: url("../img/fondo2.png") no-repeat;
-    background-size: 480px;
-    text-align: center;
-  }
-  /*-------------contenedor1------------- */
-  .contenedor1 {
-    text-align: center;
-    padding: 0 20px;
-  }
-  .contenedor1-contenido img {
-    display: none;
-  }
-
-  h3 {
-    font-size: 33px;
-  }
-}
 @media screen and (max-width: 600px) {
   .contenedor-web {
     width: 100%;
@@ -195,11 +140,18 @@ footer {
       "contenedor2"
       "footer";
   }
+  /* ----------AREAS------------ */
+  .contenedor3 {
+    grid-area: contenedor3;
+  }
   .contenedor1 {
     grid-area: contenedor1;
   }
+  .contenedor2 {
+    grid-area: contenedor2;
+  }
+  /*-----------CONTENEDOR 3-------------------------------  */
   .contenedor3 {
-    grid-area: contenedor3;
     background: none;
   }
   .menu {
@@ -216,21 +168,34 @@ footer {
   .item-menu {
     display: none;
   }
-
   .programmer {
-    background: url("../img/fondo2.png") no-repeat;
-    background-size: 600px;
+    background: url("../img/mobile.png") no-repeat;
+    background-size: cover;
     text-align: center;
   }
-  /*------------------- contenedor 1 -------------*/
+  /*------------------- CONTENEDOR 1 -------------*/
   .contenedor1-contenido img {
     display: none;
   }
-  /* .contenedor1 {
-    text-align: left;
-    padding: 0 50px;
-  } */
   h3 {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1076px) and (min-width: 600px) {
+  .contenedor-web {
+    width: 100%;
+  }
+
+  /* -----------CONTENEDOR 2------------------- */
+  .contenedor3 {
+    grid-area: contenedor3;
+    background: url("../img/mobile.png") no-repeat;
+
+    background-size: cover;
+  }
+  /* -----------CONTENEDOR 2------------------- */
+  .contenedor2 {
+    background: none;
   }
 }
