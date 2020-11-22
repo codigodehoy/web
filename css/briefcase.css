@@ -1,6 +1,6 @@
 @import url("estilos.css");
 
-.contenedor-portafolio {
+.container-briefcase {
   width: 1090px;
   height: 550px;
   background: url("../img/global.jpg") no-repeat;
@@ -39,7 +39,7 @@ header .item li a:hover {
   color: var(--azulOscuro);
 }
 
-.portafolio {
+.briefcase {
   width: 80%;
   margin: auto;
   display: grid;
@@ -51,25 +51,25 @@ header .item li a:hover {
   grid-area: "item item2 item3" "item4 item5 item6";
 }
 
-.contenido-item {
+.container-item {
   text-align: center;
   background: #61b1ee;
   opacity: 0.9;
   padding: 10px;
 }
 
-.contenido-item img {
+.container-item img {
   width: 150px;
   height: 90px;
 }
-.contenido-item a {
+.container-item a {
   display: block;
   color: var(--blanco);
   font-weight: 600;
   font-family: "Zilla Slab", serif;
   font-weight: 200px;
 }
-.contenido-item p {
+.container-item p {
   color: var(--blanco);
 }
 

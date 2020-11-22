@@ -17,7 +17,7 @@ a {
   font-family: "Zilla Slab", serif;
 }
 
-.contenedor {
+.container {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -25,7 +25,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.contenedor-web {
+.container-web {
   width: 1090px;
   height: 550px;
   background: var(--blanco);
@@ -80,7 +80,7 @@ h3 {
 /* -----------CONTENEDOR 2------------------- */
 .contenedor2 {
   grid-area: contenedor2;
-  background: url("../img/fondo-small.png") left top no-repeat;
+  background: url("../img/fondo-small.png") no-repeat;
   background-size: 164px 73px;
 }
 /* -----------CONTENEDOR 3------------------- */
@@ -129,8 +129,8 @@ footer {
 
 /* ---------------Media Queries------------- */
 
-@media screen and (max-width: 600px) {
-  .contenedor-web {
+@media screen and (max-width: 672px) {
+  .container-web {
     width: 100%;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
@@ -170,7 +170,7 @@ footer {
   }
   .programmer {
     background: url("../img/mobile.png") no-repeat;
-    background-size: cover;
+    background-size: 672px;
     text-align: center;
   }
   /*------------------- CONTENEDOR 1 -------------*/
@@ -182,8 +182,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 1076px) and (min-width: 600px) {
-  .contenedor-web {
+@media screen and (max-width: 1076px) and (min-width: 673px) {
+  .container-web {
     width: 100%;
   }
 

@@ -11,15 +11,14 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
-
     <script
       src="https://kit.fontawesome.com/33e0f3923b.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="contenedor">
-      <div class="contenedor-web">
+    <div class="container">
+      <div class="container-web">
         <div class="contenedor1">
           <div class="contenedor1-contenido">
             <img src="img/logo.png" alt="" />
@@ -53,9 +52,9 @@
             <i class="fas fa-bars"></i>
           </div>
           <ul class="item-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="portafolio.html">BRIEFCASE</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html">ACERCA</a></li>
+            <li><a href="briefcase.html">PORTAFOLIO</a></li>
           </ul>
           <div class="programmer">
             <img src="img/programmer.png" alt="" />
@@ -73,13 +72,9 @@
     </div>
     <script>
       $(".owl-carousel").owlCarousel({
-        items: 3,
-        loop: false,
-        center: true,
-        margin: 10,
-        URLhashListener: true,
-        autoplayHoverPause: true,
-        startPosition: "URLHash",
+        margin: 5,
+        loop: true,
+        autoWidth: true,
       });
     </script>
   </body>
