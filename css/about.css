@@ -14,34 +14,11 @@
     "footer footer";
 }
 
-.fa-js {
-  color: #f3cf01;
-  background: #000;
-  margin: 0 20px;
-}
-.fa-php {
-  background: #7377ad;
-  color: #000;
-  margin: 0 18px;
-}
-.fa-java {
-  color: #2e6ab2;
-  margin: 0 20px;
-}
-.fa-css3-alt {
-  color: #2e6ab2;
-  margin: 0 20px;
-}
-.fa-html5 {
-  color: #dd4b25;
-  margin: 0 20px;
-}
-.fa-github {
-  margin: 0 18px;
-}
+/* --------------Picture columna 1--------- */
 
 .picture {
   display: flex;
+  background: url("../img/foto.jpeg") center top;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -67,6 +44,12 @@
   transition: all 0.5s;
 }
 
+/* -----------------Data columna 3------------ */
+
+.data {
+  padding: 0 3em;
+}
+
 h2 {
   text-align: center;
   font-family: "Roboto Slab", serif;
@@ -75,16 +58,88 @@ h2 {
   color: #bababa;
 }
 
-.data {
-  padding: 0 3em;
-}
-
 .data p {
   color: var(--azulOscuro);
   font-size: 20px;
   font-family: "Zilla Slab", serif;
 }
+.fa-js {
+  color: #f3cf01;
+  background: #000;
+  margin: 0 20px;
+}
+.fa-php {
+  background: #7377ad;
+  color: #000;
+  margin: 0 18px;
+}
+.fa-java {
+  color: #2e6ab2;
+  margin: 0 20px;
+}
+.fa-css3-alt {
+  color: #2e6ab2;
+  margin: 0 20px;
+}
+.fa-html5 {
+  color: #dd4b25;
+  margin: 0 20px;
+}
+.fa-github {
+  margin: 0 18px;
+}
 .data p img {
   width: 20px;
   margin: 0 17px;
+}
+
+/* ---------Media Queries------ */
+
+@media screen and (max-width: 672px) {
+  .information {
+    grid-template-columns: 1fr;
+    grid-template-rows: 12% 60% 65% 10%;
+    grid-template-areas:
+      "header"
+      "picture"
+      "data"
+      "footer";
+  }
+
+  header {
+    grid-area: header;
+    padding: 15px 35px;
+  }
+  header img {
+    width: 70px;
+  }
+  .menu {
+    float: right;
+    padding: 10px 10px 0 0;
+  }
+  .menu i {
+    padding: 0;
+  }
+
+  header .item {
+    display: none;
+  }
+  .picture {
+    grid-area: picture;
+  }
+  .data {
+    grid-area: data;
+  }
+  .data h2 {
+    font-size: 23px;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+/*  */
+@media screen and (max-width: 1063px) and (min-width: 673px) {
+  h2 {
+    font-size: 22px;
+  }
 }

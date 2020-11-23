@@ -156,10 +156,11 @@ footer {
   }
   .menu {
     display: block;
-    padding: 20px 40px;
+    padding: 15px 35px;
   }
   .menu i {
     float: right;
+    padding: 10px 10px 0 0;
     color: #2a95e5;
   }
   .menu img {
@@ -183,18 +184,11 @@ footer {
 }
 
 @media screen and (max-width: 1076px) and (min-width: 673px) {
-  .container-web {
-    width: 100%;
-  }
-
-  /* -----------CONTENEDOR 2------------------- */
   .contenedor3 {
     grid-area: contenedor3;
     background: url("../img/mobile.png") no-repeat;
-
     background-size: cover;
   }
-  /* -----------CONTENEDOR 2------------------- */
   .contenedor2 {
     background: none;
   }

@@ -12,6 +12,7 @@
     "portafolio"
     "footer";
 }
+
 header {
   grid-area: header;
   padding: 35px 0 20px 70px;
@@ -38,7 +39,7 @@ header .item li a {
 header .item li a:hover {
   color: var(--azulOscuro);
 }
-
+/* ------------Portafolio------------ */
 .briefcase {
   width: 80%;
   margin: auto;
@@ -73,6 +74,7 @@ header .item li a:hover {
   color: var(--blanco);
 }
 
+/* --------pie de página---------- */
 .footer {
   grid-area: footer;
   text-align: center;
@@ -80,4 +82,57 @@ header .item li a:hover {
   background: var(--azulOscuro);
   opacity: 0.9;
   padding: 15px 0;
+}
+/*---------Media Queries---------- */
+
+@media screen and (max-width: 1081px) {
+  .container-briefcase {
+    background: var(--blanco);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "header"
+      "portafolio"
+      "footer";
+  }
+  .briefcase {
+    width: 100%;
+    background: url("../img/global.jpg") no-repeat;
+    background-size: cover;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: "item item2" "item3 item4" "item5 item6";
+  }
+}
+@media screen and (max-width: 672px) {
+  header {
+    grid-area: header;
+    padding: 15px 35px;
+  }
+  header img {
+    width: 70px;
+  }
+  .menu {
+    float: right;
+    padding: 10px 10px 0 0;
+  }
+  .menu i {
+    padding: 0;
+  }
+  .menu {
+    float: right;
+  }
+  header .item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .briefcase {
+    width: 100%;
+    background: url("../img/global.jpg") no-repeat;
+    background-size: cover;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-area: "item" "item2" "item3" "item4" "item5" "item6";
+  }
 }
