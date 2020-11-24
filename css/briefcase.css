@@ -17,24 +17,32 @@ header {
   grid-area: header;
   padding: 35px 0 20px 70px;
 }
-header img {
+
+header .logo-desktop img {
   width: 150px;
 }
+
 header .item {
   float: right;
   padding-top: 5px;
   margin-right: 60px;
 }
 
+.exit {
+  display: none;
+}
 header .item li {
   display: inline-block;
+}
+header .item li i {
+  color: #999999;
 }
 header .item li a {
   font-family: "Zilla Slab", serif;
   font-size: 18px;
   font-weight: 400;
   color: #2a95e5;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 header .item li a:hover {
   color: var(--azulOscuro);
@@ -103,30 +111,63 @@ header .item li a:hover {
     grid-area: "item item2" "item3 item4" "item5 item6";
   }
 }
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 673px) {
+  .container-item {
+    opacity: 1;
+  }
   header {
     grid-area: header;
-    padding: 15px 35px;
-  }
-  header img {
-    width: 70px;
-  }
-  .menu {
-    float: right;
-    padding: 10px 10px 0 0;
-  }
-  .menu i {
     padding: 0;
   }
-  .menu {
-    float: right;
+  .logo-desktop {
+    display: none;
   }
+
+  header .menu img {
+    width: 70px;
+  }
+
   header .item {
     display: none;
+    width: 80%;
+    padding: 0;
+    left: -100%;
+    height: 100%;
+    position: fixed;
+    background: var(--blanco);
+    transition: all 0.1s;
+    top: 0;
+  }
+
+  .exit {
+    display: block;
+    padding: 22px 15px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    background: var(--blanco);
+    color: #757575;
+  }
+  header .item li {
+    display: block;
+    padding: 15px 0;
+  }
+
+  header .item li i {
+    padding: 0 10px;
+    color: #757575;
+  }
+
+  header .item li a {
+    padding: 0 10px;
+    color: #757575;
+  }
+  header .item li:hover {
+    background: #8ac7f7;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   .briefcase {
     width: 100%;
     background: url("../img/global.jpg") no-repeat;

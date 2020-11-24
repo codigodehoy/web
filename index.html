@@ -48,13 +48,23 @@
         <div class="contenedor2"></div>
         <div class="contenedor3">
           <div class="menu">
-            <img src="img/logo.png" alt="" />
-            <i class="fas fa-bars"></i>
+            <a href=""><img src="img/logo.png" alt="" /></a>
+            <i class="fas fa-bars activate"></i>
           </div>
           <ul class="item-menu">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="about.html">ACERCA</a></li>
-            <li><a href="briefcase.html">PORTAFOLIO</a></li>
+            <i class="fa-times exit"></i>
+            <li>
+              <i class="fa-home mobile"></i>
+              <a href="index.html">INICIO</a>
+            </li>
+            <li>
+              <i class="fa-address-card mobile"></i>
+              <a href="about.html">ACERCA</a>
+            </li>
+            <li>
+              <i class="fa-briefcase mobile"></i>
+              <a href="briefcase.html">PORTAFOLIO</a>
+            </li>
           </ul>
           <div class="programmer">
             <img src="img/programmer.png" alt="" />
@@ -70,11 +80,25 @@
         </footer>
       </div>
     </div>
+
     <script>
       $(".owl-carousel").owlCarousel({
         margin: 5,
         loop: true,
         autoWidth: true,
+      });
+      $(document).ready(() => {
+        $(".activate").on("click", () => {
+          $(".item-menu").css("display", "block");
+          $(".item-menu").animate({
+            left: 0,
+          });
+        });
+        $(".exit").on("click", () => {
+          $(".item-menu").animate({
+            left: "-100%",
+          });
+        });
       });
     </script>
   </body>

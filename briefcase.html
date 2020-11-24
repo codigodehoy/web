@@ -9,19 +9,33 @@
       src="https://kit.fontawesome.com/33e0f3923b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="container-briefcase">
         <header>
           <div class="menu">
-            <i class="fas fa-bars"></i>
+            <a href="index.html"> <img src="img/logo.png" alt="" /></a>
+            <i class="fas fa-bars activate"></i>
           </div>
-          <img src="img/logo.png" alt="" />
+          <a href="index.html" class="logo-desktop">
+            <img src="img/logo.png" alt="" />
+          </a>
           <ul class="item">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="about.html">ACERCA</a></li>
-            <li><a href="portafolio.html">PORTAFOLIO</a></li>
+            <i class="fa-times exit"></i>
+            <li>
+              <i class="fa-home mobile"></i>
+              <a href="index.html">INICIO</a>
+            </li>
+            <li>
+              <i class="fa-address-card mobile"></i
+              ><a href="about.html">ACERCA</a>
+            </li>
+            <li>
+              <i class="fa-briefcase mobile"></i>
+              <a href="briefcase.html">PORTAFOLIO</a>
+            </li>
           </ul>
         </header>
         <div class="briefcase">
@@ -84,6 +98,6 @@
       </div>
     </div>
 
-    <script></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

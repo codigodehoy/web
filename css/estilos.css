@@ -89,21 +89,34 @@ h3 {
   grid-area: contenedor3;
   background: url("../img/fondo.png") no-repeat;
 }
+.menu {
+  display: none;
+}
+
 .item-menu {
   text-align: right;
   padding-top: 40px;
   width: 90%;
 }
-.menu {
+.exit {
   display: none;
 }
+.mobile {
+  display: none;
+}
+
 .item-menu li {
   display: inline-block;
+}
+
+.item-menu li i {
+  color: var(--blanco);
+  /* font-size: 17px; */
 }
 .item-menu li a {
   font-size: 18px;
   color: var(--blanco);
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .item-menu li a:hover {
   cursor: pointer;
@@ -156,6 +169,7 @@ footer {
   }
   .menu {
     display: block;
+    color: #fff;
     padding: 15px 35px;
   }
   .menu i {
@@ -166,8 +180,49 @@ footer {
   .menu img {
     width: 70px;
   }
+
   .item-menu {
     display: none;
+    width: 80%;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+    background: var(--blanco);
+    transition: all 0.1s;
+    top: 0;
+  }
+  .exit {
+    display: block;
+    padding: 22px 15px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    background: var(--blanco);
+    color: #757575;
+    text-align: left;
+  }
+  .mobile {
+    display: inline-block;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+  }
+
+  .item-menu li {
+    display: block;
+    padding: 15px 0;
+    text-align: left;
+  }
+  .item-menu li i {
+    padding: 0 10px;
+    color: #757575;
+  }
+  .item-menu li a {
+    color: #757575;
+  }
+  .item-menu li:hover {
+    background: #8ac7f7;
   }
   .programmer {
     background: url("../img/mobile.png") no-repeat;
@@ -175,11 +230,28 @@ footer {
     text-align: center;
   }
   /*------------------- CONTENEDOR 1 -------------*/
+  .contenedor1 {
+    padding: 0;
+  }
+  h3 {
+    text-align: center;
+    font-size: 36px;
+  }
+  .contenedor1-contenido {
+    padding: 0 20px;
+  }
   .contenedor1-contenido img {
     display: none;
   }
-  h3 {
-    font-size: 36px;
+  .contenedor-texto {
+    padding: 15% 0;
+  }
+  .contenedor-texto p {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .redes-sociales {
+    padding: 5px 0.3em;
   }
 }
 

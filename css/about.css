@@ -18,7 +18,8 @@
 
 .picture {
   display: flex;
-  background: url("../img/foto.jpeg") center top;
+  background: url("../img/me.jpeg");
+  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -26,9 +27,7 @@
 .picture:hover p {
   top: 0;
 }
-.picture h2 {
-  position: absolute;
-}
+
 .picture p {
   display: flex;
   align-items: center;
@@ -44,7 +43,7 @@
   transition: all 0.5s;
 }
 
-/* -----------------Data columna 3------------ */
+/* -----------------Data columna 2------------ */
 
 .data {
   padding: 0 3em;
@@ -94,6 +93,11 @@ h2 {
 }
 
 /* ---------Media Queries------ */
+@media screen and (max-width: 1063px) {
+  h2 {
+    font-size: 22px;
+  }
+}
 
 @media screen and (max-width: 672px) {
   .information {
@@ -106,24 +110,10 @@ h2 {
       "footer";
   }
 
-  header {
-    grid-area: header;
-    padding: 15px 35px;
-  }
   header img {
     width: 70px;
   }
-  .menu {
-    float: right;
-    padding: 10px 10px 0 0;
-  }
-  .menu i {
-    padding: 0;
-  }
 
-  header .item {
-    display: none;
-  }
   .picture {
     grid-area: picture;
   }
@@ -137,9 +127,17 @@ h2 {
     grid-area: footer;
   }
 }
-/*  */
-@media screen and (max-width: 1063px) and (min-width: 673px) {
-  h2 {
-    font-size: 22px;
+@media screen and (max-width: 429px) {
+  .information {
+    grid-template-columns: 1fr;
+    grid-template-rows: 12% 60% 50% 10%;
+    grid-template-areas:
+      "header"
+      "picture"
+      "data"
+      "footer";
+  }
+  .data h2 {
+    font-size: 14px;
   }
 }
