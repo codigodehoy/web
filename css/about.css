@@ -101,7 +101,7 @@ h2 {
 
 @media screen and (max-width: 672px) {
   .information {
-    height: 100%;
+    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 12% 60% 65% 10%;
     grid-template-areas:
