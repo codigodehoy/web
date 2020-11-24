@@ -145,12 +145,12 @@ footer {
 @media screen and (max-width: 672px) {
   .container-web {
     width: 100%;
-    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    grid-template-rows: repeat(2, 1fr) 10%;
     grid-template-columns: 1fr;
     grid-template-areas:
       "contenedor3"
       "contenedor1"
-      "contenedor2"
       "footer";
   }
   /* ----------AREAS------------ */
@@ -160,9 +160,7 @@ footer {
   .contenedor1 {
     grid-area: contenedor1;
   }
-  .contenedor2 {
-    grid-area: contenedor2;
-  }
+
   /*-----------CONTENEDOR 3-------------------------------  */
   .contenedor3 {
     background: none;
