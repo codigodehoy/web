@@ -141,7 +141,7 @@ footer {
 }
 
 /* ---------------Media Queries------------- */
-@media screen and (max-width: 1076px) {
+@media screen and (max-width: 1024px) {
   .contenedor3 {
     grid-area: contenedor3;
     background: url("../img/mobile.png") no-repeat;

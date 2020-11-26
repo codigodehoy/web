@@ -93,9 +93,16 @@ h2 {
 }
 
 /* ---------Media Queries------ */
-@media screen and (max-width: 1063px) {
-  h2 {
-    font-size: 22px;
+@media screen and (max-width: 1024px) {
+  .information {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 70% repeat(2, 1fr);
+    grid-template-areas:
+      "header"
+      "picture"
+      "data"
+      "footer";
   }
 }
 
@@ -103,7 +110,7 @@ h2 {
   .information {
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 12% 60% 65% 10%;
+    grid-template-rows: 1fr 50% repeat(2, fr);
     grid-template-areas:
       "header"
       "picture"
@@ -121,24 +128,8 @@ h2 {
   .data {
     grid-area: data;
   }
-  .data h2 {
-    font-size: 23px;
-  }
+
   .footer {
     grid-area: footer;
-  }
-}
-@media screen and (max-width: 429px) {
-  .information {
-    grid-template-columns: 1fr;
-    grid-template-rows: 12% 60% 50% 10%;
-    grid-template-areas:
-      "header"
-      "picture"
-      "data"
-      "footer";
-  }
-  .data h2 {
-    font-size: 14px;
   }
 }
