@@ -72,12 +72,9 @@ header .item li a:hover {
   height: 90px;
 }
 
-.container-item a {
-  display: block;
+.container-item h4 {
   color: var(--blanco);
-  font-weight: 600;
   font-family: "Zilla Slab", serif;
-  font-weight: 200px;
 }
 .container-item p {
   color: var(--blanco);
