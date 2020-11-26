@@ -150,6 +150,19 @@ footer {
   .contenedor2 {
     background: none;
   }
+  .fa-whatsapp-square {
+    color: #25d366;
+    font-size: 1.5em;
+  }
+  .fa-facebook-square {
+    color: #1877f2;
+    font-size: 1.5em;
+  }
+
+  .fa-youtube {
+    color: #ff0000;
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 672px) {
