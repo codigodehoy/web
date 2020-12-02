@@ -18,7 +18,7 @@
 
 .picture {
   display: flex;
-  background: url("../img/me.jpeg");
+  background: url("../img/david.jpeg");
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -46,13 +46,13 @@
 /* -----------------Data columna 2------------ */
 
 .data {
-  padding: 0 3em;
+  padding: 0 3em 1.3em 3em;
 }
 
 h2 {
   text-align: center;
   font-family: "Roboto Slab", serif;
-  font-size: 27px;
+  font-size: 1.3em;
   padding: 1em;
   color: #bababa;
 }
